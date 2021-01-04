@@ -8,10 +8,10 @@ urlpatterns = [
         'get': 'all',
         'post': 'create'
     })),
-    # path('products/<str:pk>', ProductViewSet.as_view({
-    #     'get': 'retrive',
-    #     'put': 'update',
-    #     'delete': 'remove'
-    # }))
+    path('products/<str:pk>', ProductViewSet.as_view({
+        'get': 'retrive',
+        'put': 'update',
+        'delete': 'remove'
+    }))
 ]
 
