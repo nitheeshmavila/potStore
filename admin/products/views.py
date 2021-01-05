@@ -28,8 +28,3 @@ class ProductViewSet(viewsets.ViewSet):
         serialzer.save()
         return Response(serialzer.data, status=status.HTTP_202_ACCEPTED)
 
-    def remove(self, request, pk=None):
-        product = Product.objects.get(id=pk)
-        product.delete()
-        return Response(status=status.HTTP_204_NO_CONTENT)
-
